@@ -1,0 +1,65 @@
+@using ApiCursos.models
+@model AlunoModel
+{
+    ViewData["Title"] = "Alunos Adicionados";
+}
+<div class = "textcenter"
+
+<div class="d-grid gap-2 d-md-flex justfy-content-md-start">
+    <a class="btn btn-primary" role="button" asp-controller= "AlunoModel" asp-action="Adicionar" Alunos></a>
+</div>
+<br />
+
+<h1 class="display-4">Alunos </h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome/th>
+            <th scope="col">Ra</th>
+            <th scope="col">Curso</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>mdo</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="AlunoModel" asp-action="Adicionar">Adicionar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="AlunoModel" asp-action="Retirar">Retirar</a>
+                    <a role="button" class="btn btn-warning" asp-controller="AlunoModel" asp-action="Editar">Editar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>fat</td>
+            <td>
+                <div class="btn-group" role="group"></div>
+                    <a role="button" class="btn btn-primary" asp-controller="AlunoModel" asp-action="Adicionar">Adicionar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="AlunoModel" asp-action="Retirar">Retirar</a>
+                    <a role="button" class="btn btn-warning" asp-controller="AlunoModel" asp-action="Editar">Editar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Luis</td>
+            <td >Larry the Bird</td>
+            <td>twitter</td>
+            <td>
+                <div class="btn-group" role="group"></div>
+                    <a role="button" class="btn btn-primary" asp-controller="AlunoModel" asp-action="Adicionar">Adicionar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="AlunoModel" asp-action="Retirar">Retirar</a>
+                    <a role="button" class="btn btn-warning" asp-controller="AlunoModel" asp-action="Editar">Editar</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
